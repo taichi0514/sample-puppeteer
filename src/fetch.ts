@@ -4,7 +4,6 @@ import puppeteer from 'puppeteer';
 dotenv.config();
 const EMAIL = process.env.EMAIL ?? '';
 const PASSWORD = process.env.PASSWORD ?? '';
-
 (async () => {
   try {
     const browser = await puppeteer.launch({
@@ -49,7 +48,7 @@ const PASSWORD = process.env.PASSWORD ?? '';
     await page.click('a[href="/aggregation_queue/bq3Jl7efNG-zqQHrZXWAQQ"]');
 
     await browser.close();
-  } catch (e) {
-    throw new Error('error ' + e);
+  } catch (error) {
+    throw new Error('error' + error);
   }
-})();
+})().catch
