@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node lib/fetch.js "
+    "start": "node lib/fetch.js"
   },
   "author": "",
   "license": "ISC",
