@@ -119,3 +119,5 @@ dist
 
 # lib
 lib
+
+.DS_Store
