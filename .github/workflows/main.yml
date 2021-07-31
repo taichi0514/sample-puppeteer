@@ -1,8 +1,8 @@
 name: sample-puppeteer
 
 on:
-  schedule:
-    - cron:  '0 0,12 * * *'
+  pull_request:
+    branches: [master, staging, production]
 
 jobs:
   build:
@@ -14,4 +14,3 @@ jobs:
           node-version: "v14.17.0"
       - run: npm i
       - run: npm run build
-      - run: npm run start
