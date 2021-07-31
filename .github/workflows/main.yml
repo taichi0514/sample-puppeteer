@@ -14,3 +14,4 @@ jobs:
           node-version: "v14.17.0"
       - run: npm i
       - run: npm run build
+      - run: npm start
