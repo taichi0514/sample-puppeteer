@@ -9,6 +9,3 @@ sample-puppeteer
 
 
 
-
-
-
